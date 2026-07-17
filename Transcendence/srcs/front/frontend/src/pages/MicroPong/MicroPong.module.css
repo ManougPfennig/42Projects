@@ -1,0 +1,8 @@
+.micro_pong {
+	margin: 16px;
+}
+
+.canvas_container {
+	background-color: black;
+	border: 8px solid white;
+}

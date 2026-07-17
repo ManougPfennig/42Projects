@@ -1,0 +1,273 @@
+.logo {
+	margin-top: 5%;
+}
+  
+.centered_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	padding: 0 20px;
+	margin-top: 20px;
+}
+  
+.centered_container button {
+	margin-top: 25px;
+	min-width: 250px;
+	max-width: 250px;
+	border-radius: 10px;
+	padding: 8px;
+	margin-bottom: 20px;
+	font-size: 1.5em;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+	color: whitesmoke;
+	background-color: rgb(75, 0, 130);
+	box-shadow: 0 0 10px rgba(75, 0, 130, 1);
+	transition: background-color 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
+}
+  
+.centered_container button:hover {
+	background-color: rgb(255, 102, 102);
+	outline: 10px double whitesmoke;
+	box-shadow: 0 0 20px rgba(255, 102, 102), 0 0 30px rgba(255, 102, 102);
+}
+  
+.info_wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 0px;
+	width: 100%;
+	margin-top: 30px;
+}
+  
+.info_wrapper .userinfo_container:first-child {
+	border-right: 5px solid white;
+}
+  
+.info_wrapper .userinfo_container:last-child {
+	border-left: 5px solid white;
+	justify-content: center;
+	min-height: 100%;
+}
+  
+.userinfo_container {
+	margin-top: 0;
+	margin-bottom: 2%;
+	border: 10px solid white;
+	width: 100%;
+	max-width: 400px;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+  
+.userinfo_container p {
+	margin: 2%;
+	border: 2px solid white;
+	color: whitesmoke;
+	font-size: 1.5em;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+	text-align: center;
+	width: 100%;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	max-width: 100%;
+}
+
+.userinfo_container h3 {
+	color: whitesmoke;
+	font-size: 2em;
+}
+  
+.userinfo_container img {
+	border-radius: 30px;
+	margin: 2%;
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+  
+.edit_profile_modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+  
+.edit_profile_content {
+	background-color: black;
+	border: 10px solid white;
+	border-radius: 30px;
+	padding: 30px;
+	width: 70%;
+	max-width: 600px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+  
+.form_group {
+	margin-bottom: 15px;
+	width: 100%;
+}
+  
+.form_group label {
+	display: block;
+	margin-bottom: 5px;
+	color: whitesmoke;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+}
+  
+.form_group input {
+	width: 100%;
+	padding: 8px;
+	border: none;
+	background-color: whitesmoke;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif, sans-serif !important;
+	box-sizing: border-box;
+	color: black;
+}
+  
+.edit_profile_content_b {
+	min-width: 50px !important;
+	max-width: 50px !important;
+	border-radius: 10px;
+	padding: 8px;
+	margin-top: 20px;
+	font-size: 1.5em;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif, sans-serif !important;
+	color: whitesmoke;
+	background-color: rgb(75, 0, 130);
+	box-shadow: 0 0 10px rgba(75, 0, 130, 1);
+	transition: background-color 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
+}
+  
+.edit_profile_content_b:hover {
+	background-color: rgb(255, 102, 102);
+	outline: 10px double whitesmoke;
+	box-shadow: 0 0 20px rgba(255, 102, 102), 0 0 30px rgba(255, 102, 102);
+}
+  
+.edit_profile_title {
+	color: whitesmoke;
+}
+  
+.qr_code_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0;
+	padding: 20px;
+	background-color: black;
+	color: whitesmoke;
+}
+  
+.qr_code_container img {
+	margin: 20px 0;
+	border: 5px solid white;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+	color: whitesmoke;
+}
+  
+.verification_input {
+	width: 100%;
+	padding: 8px;
+	margin: 10px 0;
+	border: none;
+	background-color: whitesmoke;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif !important;
+	box-sizing: border-box;
+	color: black;
+}
+
+
+.userhistory_container {
+    margin-top: 0;
+    margin-bottom: 2%;
+    border: 10px solid white;
+    width: 100%;
+    max-width: 430px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-height: 720px;
+    overflow-y: auto;
+}
+
+.userhistory_container h3 {
+    color: whitesmoke;
+    font-size: 1.5em;
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.game_history_item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+}
+
+.game_history_item:last-child {
+    border-bottom: none;
+}
+
+.game_history_item span {
+    text-align: center;
+}
+
+.userhistory_container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.userhistory_container::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+}
+
+.userhistory_container::-webkit-scrollbar-thumb {
+    background: rgb(75, 0, 130);
+    border-radius: 10px;
+}
+
+.userhistory_container::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 102, 102);
+}
+
+.error{
+	font-size: 16;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif !important;
+	color : red !important;
+	text-align: center;
+}
+
+.verification_message {
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+.secret {
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif !important;
+	font-size: 0.8em;
+}

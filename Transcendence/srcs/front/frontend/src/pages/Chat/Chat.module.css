@@ -1,0 +1,306 @@
+.centered_container {
+	all: unset;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 300px;
+	height: 300px;
+}
+.centered_container button:hover {
+	background-color: white;
+	outline: none;
+	box-shadow: none;
+	color: rgb(255, 102, 102);
+}
+
+.image_move_up {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.image_move_up img {
+	height: auto;
+	position: relative;
+	top: -380px;
+	z-index: 2;
+}
+
+.message_container {
+	all: unset;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	width: 300px;
+	height: 220px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 10px;
+}
+.message_container p {
+	width: 250px;
+	margin-left: 14px;
+	padding-bottom: 7px;
+	margin-top: 7px;
+	margin-bottom: 0px;
+	border-bottom: 1px solid white;
+	background-color: none;
+	color: white;
+	border-radius: 0px;
+	word-wrap: break-word;
+	font-size: 0.8em;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+}
+.message_container::-webkit-scrollbar {
+	width: 0px;
+}
+
+.input_container {
+	all: unset;
+	display: flex;
+	flex-direction: row;
+	width: 300px;
+	height: 50px;
+}
+.input_container input {
+	all: unset;
+	background-color: white;
+	width: 210px;
+	height: 40px;
+	margin-top: 10px !important;
+	padding-left: 10px;
+	color: black;
+	font-weight: bold;
+	font-size: 0.9em;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+}
+.input_container button {
+	all: unset;
+	height: 40px;
+	width: 60px;
+	padding-left: 25px;
+	margin-top: 10px !important;
+	border-radius: 0px;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+	color: grey;
+	background-color: white;
+	box-shadow: none;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease, color 0.3s ease;
+}
+
+.message_row {
+	position: relative !important;
+	display: flex;
+	align-items: baseline;
+	margin: 4px 0;
+}
+
+.username_button {
+	margin-left: 10px;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    margin-right: 4px;
+	text-decoration: underline;
+}
+
+.message_separator {
+    margin-right: 8px;
+	color: whitesmoke;
+}
+
+.message_content {
+    word-break: break-word;
+	color: whitesmoke;
+}
+
+.menu {
+	position: absolute;
+	margin-top: 20px;
+	background-color: whitesmoke;
+	padding: 8px;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	min-width: 120px;
+	margin-left: 10px;
+	z-index: 10;
+}
+
+.menu button {
+	background: none;
+	border: none;
+	padding: 6px 0;
+	margin: 2px 0;
+	cursor: pointer;
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: black;
+	text-align: center;
+	font-size: 0.9em;
+	transition: text-decoration-color 0.2s ease;
+}
+
+.menu button:hover {
+	background: grey;
+	color: black;
+}
+
+.centered_container_chat {
+	all: unset;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 300px;
+	height: 280px;
+	border-radius: 10px;
+	background-color: black;
+	border: 8px solid white;
+	border-bottom: none;
+	border-radius: 0px;
+}
+
+.game_invite_button {
+	text-decoration: underline;
+	text-align: center !important;
+	color: whitesmoke !important;
+	background-color: transparent;
+}
+
+/*CustomGameFormCSS:*/
+/*CustomGameFormCSS:*/
+/*CustomGameFormCSS:*/
+
+
+.gameform_container {
+	display: flex;
+	flex-direction: column;
+	justify-content:left;
+	border: 5px solid white;
+	margin-bottom: 20px;
+	width: 280px;
+	background-color: black;
+	height:fit-content;
+}
+
+.gameform_number_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+}
+.gameform_number_container p {
+	color: white;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+	min-width: 30px;
+	text-align: center;
+}
+.gameform_number_container button {
+	width: 20px;
+	border-radius: 4px;
+	font-size: 0.8em;
+	font-weight: bolder;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+	background-color: black;
+	box-shadow: none;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+.gameform_number_container button:hover {
+	background-color: white;
+	color: black;
+}
+
+.gameform_checkbox_container {
+	display: flex;
+	align-items: center;
+	margin: 10px;
+	margin-top: 8px;
+	margin-bottom: 0px;
+	gap: 10px;
+}
+.gameform_checkbox_container p {
+	color: white;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+}
+.gameform_checkbox_container input[type="checkbox"] {
+	display: none;
+}
+.gameform_checkbox_container label {
+	all:unset;
+	cursor: pointer;
+	width: 6px;
+	height: 6px;
+	border: 3px solid white;
+	user-select: none;
+	background-color: black;
+}
+.gameform_checkbox_container label {
+	transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.gameform_checkbox_container input[type="checkbox"]:checked + label {
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
+
+.start_button {
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content:center bottom;
+}
+.start_button button {
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.start_button button:hover {
+	background-color: white;
+	color: black;
+}
+
+.info_message {
+	color: whitesmoke;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+	height: 8px;
+	font-size: 0.7em;
+	padding-left: 10px;
+	margin-bottom: 0px;
+}
+
+.invite_header {
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content:center bottom;
+}
+
+.invite_header button {
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.invite_header button:hover {
+	background-color: white;
+	color: black;
+}
